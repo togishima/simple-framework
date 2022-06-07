@@ -9,10 +9,18 @@
             "email": "t.ogi.1211@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Tests\\":"tests"
+        }
+    },
     "scripts": {
-        "analyze": ["phpstan analyse -c phpstan.neon"]
+        "analyze": ["phpstan analyse -c phpstan.neon"],
+        "test": ["phpunit"]
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.7"
+        "phpstan/phpstan": "^1.7",
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^6.1"
     }
 }
