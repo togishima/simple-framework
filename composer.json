@@ -1,0 +1,13 @@
+{
+    "name": "togishima/simple-framework",
+    "description": "a very basic and simple web framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "togishima",
+            "email": "t.ogi.1211@gmail.com"
+        }
+    ],
+    "require": {}
+}
