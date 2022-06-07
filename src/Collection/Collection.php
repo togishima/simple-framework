@@ -1,6 +1,6 @@
 <?php
 
-namespace Collection;
+namespace Basic\Collection;
 
 use ArrayIterator;
 use InvalidArgumentException;
@@ -11,7 +11,7 @@ use Traversable;
  * Foundation class for first class collection
  * @template T
  */
-abstract class FirstClassCollection implements IteratorAggregate
+abstract class Collection implements IteratorAggregate
 {
     /**
      * @var array<T>
