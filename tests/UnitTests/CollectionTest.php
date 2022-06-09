@@ -49,6 +49,18 @@ class CollectionTest extends TestCase
     /**
      * @test
      */
+    public function cannotAppendMoreThanFourItems()
+    {
+        $this->expectException(InvalidArgumentException::class);
+        $items = [new Sample(), new Sample(), new Sample(), new Sample()];
+        $collection = new SampleCollection($items);
+
+        $collection->append(new Sample());
+    }
+
+    /**
+     * @test
+     */
     public function doesNotAcceptEmptyArray()
     {
         $this->expectException(InvalidArgumentException::class);

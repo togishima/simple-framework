@@ -42,5 +42,9 @@ class SampleCollectionRule
         return count($items) > self::MAX;
     }
 
+    public static function isMax(int $value)
+    {
+        return $value === self::MAX;
+    }
 
 }

@@ -16,7 +16,7 @@ abstract class Collection implements IteratorAggregate
     /**
      * @var array<T>
      */
-    private readonly array $items;
+    protected readonly array $items;
 
     /**
      * @param array<T> $items
